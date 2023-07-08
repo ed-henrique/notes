@@ -1,0 +1,30 @@
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = "Ed Pizza"
+
+[params]
+  displayName = "EN"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "2 January 2006"
+  # logo = "img/logo.png"
+  # secondaryLogo = "img/secondary-logo.png"
+  # description = "My awesome website"
+  # copyright = "Copy, _right?_ :thinking_face:"
+
+[author]
+  name = "Eduardo Machado"
+  image = "img/eduardo_machado.jpeg"
+  headline = "Fullstack Developer"
+  bio = "Computer science student, fullstack developer, and open source enthusiast. I love to learn new things and share my knowledge with others."
+  links = [
+    { link = "https://www.ed-pizza.com/" },
+    { email = "mailto:edu.hen.fm@gmail.com" },
+    { github = "https://github.com/ed-henrique" },
+    { linkedin = "https://linkedin.com/in/ed-hfm" },
+    { dev = "https://dev.to/ed_henrique" },
+    { medium = "https://medium.com/@edu.hen.fm" },
+    { ko-fi = "https://ko-fi.com/edhenrique" },
+    { orcid = "https://orcid.org/0009-0008-7340-976X" },
+  ]
