@@ -1,0 +1,60 @@
+baseURL = 'https://www.ed-pizza.com'
+languageCode = 'en-us'
+title = "Ed's Pizza"
+enableGitInfo = true
+
+# (Optional) If you provide a Disqus shortname, comments will be enabled on
+# all pages.
+# disqusShortname = "my-site"
+
+[params]
+toc = true
+comments = true
+
+[params.author]
+name = "Eduardo Machado"
+email = "edu.hen.fm@gmail.com"
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  # By default, Goldmark trims unsafe outputs which might prevent some shortcodes from rendering.
+  # It is recommended to set markup.goldmark.renderer.unsafe=true if you encounter problems.
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Enable user to embed HTML snippets in Markdown content.
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    noClasses = false
+    tabWidth = 4
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+    ordered = true
+
+# The left side navbar at the top
+[menu]
+  [[menu.nav]]
+  name = "About"
+  url = "/about"
+  weight = 2
+
+  [[menu.nav]]
+  name = "Posts"
+  url = "/posts"
+  weight = 3
+
+  [[menu.nav]]
+  name = "Tags"
+  url = "/tags"
+  weight = 4
+
+[build]
+  writeStats = true
+
+[frontmatter]
+  date = ['date', 'publishDate', 'lastmod']
+  expiryDate = ['expiryDate']
+  lastmod = [':git', 'lastmod', 'date', 'publishDate']
+  publishDate = ['publishDate', 'date']
